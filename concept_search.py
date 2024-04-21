@@ -4,7 +4,7 @@ from copy import copy
 from dataclasses import asdict, dataclass
 import random
 import re
-from textwrap import dedent, indent
+from textwrap import dedent
 from typing import (
     Any,
     Callable,
@@ -18,8 +18,8 @@ from typing import (
 )
 
 from colorama import Fore
-from langchain_community.cache import SQLiteCache
-from langchain_core.globals import set_llm_cache
+# from langchain_community.cache import SQLiteCache
+# from langchain_core.globals import set_llm_cache
 from langchain_core.messages import HumanMessage
 from langchain_groq import ChatGroq
 from ruamel.yaml import YAML
