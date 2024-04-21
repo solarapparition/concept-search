@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "concept-search"
+version = "0.1.0"
+description = ""
+authors = ["Mengyang (John) Cha <15233508+solarapparition@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "concept_search"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain-groq = "^0.1.2"
+colorama = "^0.4.6"
+ruamel-yaml = "^0.18.6"
+langchain-community = "^0.0.34"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.1.0"
+black = "^24.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
